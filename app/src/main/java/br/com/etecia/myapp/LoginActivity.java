@@ -43,14 +43,25 @@ public class LoginActivity extends AppCompatActivity {
             public void onClick(View view) {
                 String email, password;
 
-                if (email.equals("etecia") && password.equals("etecia")) {
-                    startActivity(new Intent(getApplicationContext(), MenuPrincipalActivity.class));
-                    finish();
-                } else {
-                    Toast.makeText(getApplicationContext(), "Usuário ou senha invalidos", Toast.LENGTH_SHORT).show();
-                }
+            }
+
+        });
+
+        bntCadastrar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(getApplicationContext(), CadastrarUsuarioActivity.class));
+                finish();
             }
         });
+
+        bntEsqueceuSenha.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(getApplicationContext(), EsqueceuSenhaActivity.class));
+                finish();
+            }
+        });;
 
     }
 }
