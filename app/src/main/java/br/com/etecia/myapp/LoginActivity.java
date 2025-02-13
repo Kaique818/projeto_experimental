@@ -1,6 +1,9 @@
 package br.com.etecia.myapp;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -32,6 +35,22 @@ public class LoginActivity extends AppCompatActivity {
         bntEsqueceuSenha = findViewById(R.id.bntEsqueceuSenha);
         txtEmail = findViewById(R.id.txtEmail);
         txtSenha = findViewById(R.id.txtSenha);
+
+
+        //criando ação para os botoes
+        bntEntrar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                String email, password;
+
+                if (email.equals("etecia") && password.equals("etecia")) {
+                    startActivity(new Intent(getApplicationContext(), MenuPrincipalActivity.class));
+                    finish();
+                } else {
+                    Toast.makeText(getApplicationContext(), "Usuário ou senha invalidos", Toast.LENGTH_SHORT).show();
+                }
+            }
+        });
 
     }
 }
