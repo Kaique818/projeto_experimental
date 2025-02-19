@@ -43,6 +43,16 @@ public class LoginActivity extends AppCompatActivity {
             public void onClick(View view) {
                 String email, password;
 
+                email = txtEmail.getText().toString().trim();
+                password = txtSenha.getText().toString().trim();
+
+                if (email.equals("etecia") && password.equals("etecia")){
+                    startActivity(new Intent(getApplicationContext(), MenuPrincipalActivity.class));
+                    finish();
+                } else {
+                    Toast.makeText(getApplicationContext(), "Usuário ou senha inválidos", Toast.LENGTH_SHORT).show();
+                }
+
             }
 
         });
