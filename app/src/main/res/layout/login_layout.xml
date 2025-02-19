@@ -83,20 +83,21 @@
             android:layout_width="150dp"
             android:layout_height="50dp"
             android:layout_marginLeft="10dp"
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="20dp"
             android:text="Entrar"
             android:textColor="@color/black" />
 
 
     </RelativeLayout>
 
-    <TextView
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/bntEsqueceuSenha"
-        style="?attr/materialButtonOutlinedStyle"
-        android:layout_width="200dp"
-        android:layout_height="50dp"
-        android:textAlignment="center"
+
+        style="@style/Widget.Material3.Button.TextButton"
+        android:layout_width="130dp"
+        android:layout_height="33dp"
         android:text="@string/esqueceu_senha"
+        android:textAlignment="center"
         android:textColor="@color/black"
         android:textSize="12sp"/>
 
@@ -109,11 +110,13 @@
         <com.google.android.material.button.MaterialButton
             android:id="@+id/bntCadastrar"
             style="?attr/materialButtonOutlinedStyle"
+            android:layout_centerHorizontal="true"
             android:layout_width="200dp"
             android:layout_height="50dp"
             android:layout_marginTop="20dp"
             android:layout_marginLeft="107dp"
-            android:text="Cadastrar usuário"
+            android:text="Novo usuário"
+            android:textAlignment="center"
             android:textColor="@color/black"
 
             />

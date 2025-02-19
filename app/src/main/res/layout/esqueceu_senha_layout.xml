@@ -33,6 +33,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
+        android:layout_marginBottom="15dp"
         android:text="CRIE UMA NOVA SENHA"
         android:textAlignment="center"
         android:textColor="#000"
@@ -40,13 +41,14 @@
         android:textStyle="bold"
 
         />
+
     <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="10dp"
         android:layout_marginTop="10dp"
         android:layout_marginRight="10dp"
-        android:hint="Digite seu nome completo"
+        android:hint="Digite seu email"
         app:boxCornerRadiusBottomEnd="15dp"
         app:boxCornerRadiusBottomStart="15dp"
         app:boxCornerRadiusTopEnd="15dp"
@@ -60,21 +62,22 @@
             android:inputType="textPassword" />
     </com.google.android.material.textfield.TextInputLayout>
 
+
     <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="10dp"
         android:layout_marginTop="10dp"
         android:layout_marginRight="10dp"
-        android:hint="Digite seu Email"
+        android:hint="Senha atual"
         app:boxCornerRadiusBottomEnd="15dp"
         app:boxCornerRadiusBottomStart="15dp"
         app:boxCornerRadiusTopEnd="15dp"
         app:boxCornerRadiusTopStart="15dp"
-        app:startIconDrawable="@drawable/baseline_email">
+        app:startIconDrawable="@drawable/baseline_lock">
 
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/txtEmailEqs"
+            android:id="@+id/txtSenhaRecEqs"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="textPassword" />
@@ -94,7 +97,7 @@
         app:startIconDrawable="@drawable/baseline_lock">
 
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/txtSenhaEqs"
+            android:id="@+id/txtConfirmSenhaEqs"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="textPassword" />
