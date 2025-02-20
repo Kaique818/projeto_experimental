@@ -9,25 +9,40 @@
     android:orientation="vertical"
     tools:context=".CadastrarUsuarioActivity">
 
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/IdToolBarCadUsuario"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            app:navigationIcon="@drawable/baseline_arrow_back_24"
+            app:titleCentered="true"
+            app:titleTextColor="#E91E" />
+    </com.google.android.material.appbar.AppBarLayout>
+
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="60dp"
         android:text="HIRE MATCH"
         android:textAlignment="center"
         android:textColor="#000"
-        android:textSize="20dp"
+        android:textSize="25dp"
         android:textStyle="bold"
 
         />
 
     <ImageView
         android:id="@+id/imgVermelho"
-        android:layout_width="80dp"
-        android:layout_height="80dp"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
         android:layout_gravity="center"
-        android:layout_margin="58dp"
+        android:layout_margin="30dp"
         android:src="@drawable/logomelhor" />
+
+
 
     <TextView
         android:layout_width="match_parent"
